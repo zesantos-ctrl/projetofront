@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <title>FocusFox | Home</title>
+    <link rel="stylesheet" href="home.css">
+</head>
+<body>
+    <div class="background-blur"></div> <!-- Fundo com blur -->
+
+    <header>
+        <nav class="navbar">
+            <h2 class="logo">FocusFox</h2>
+            <ul>
+                <li><a href="index.html">Início</a></li>
+                <li><a href="Vocabulary/vocabulary.html">Vocabulary</a></li>
+                <li><a href="Listening/listening.html">Listening</a></li>
+                <li><a href="Speaking/speaking.html">Speaking</a></li>
+                <li><a href="Grammar/grammar.html">Grammar</a></li>
+                <li><a href="Writing/writing.html">Writing</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main class="home-container">
+        <h1>Welcome, student! 👋</h1>
+        <p>Escolha uma categoria e continue seus estudos.</p>
+
+        <div class="cards">
+            <a href="Vocabulary/vocabulary.html" class="card">📚 Vocabulary</a>
+            <a href="Listening/listening.html" class="card">🎧 Listening</a>
+            <a href="Speaking/speaking.html" class="card">🗣️ Speaking</a>
+            <a href="Grammar/grammar.html" class="card">✍️ Grammar</a>
+            <a href="Writing/writing.html" class="card">📝 Writing</a>
+        </div>
+    </main>
+
+    <<!-- Botão da raposa -->
+<div class="chat-bot-button" onclick="toggleChat()">🦊</div>
+
+<!-- Janela de chat -->
+<div class="chat-box" id="chatBox">
+    <div class="chat-header">FoxBot 🦊</div>
+    <div class="chat-messages" id="chatMessages"></div>
+    <textarea id="userMsg" placeholder="Digite algo..."></textarea>
+    <button onclick="sendMessage()">Enviar</button>
+</div>
+
+
+    <footer>
+        &copy; 2025 FocusFox — Todos os direitos reservados 🦊📘
+    </footer>
+    <script src="home.js"></script>
+</body>
+</html>

@@ -1,0 +1,189 @@
+/* Fundo com blur */
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    min-height: 100vh;
+    position: relative;
+}
+
+.background-blur {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: url("/img/48bace0c-c499-4a44-9aed-7961f8008337.png");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    filter: blur(4px);
+    z-index: -1;
+}
+
+/* NAVBAR */
+.navbar {
+    background: #4CAF50;
+    padding: 15px 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: white;
+}
+
+.navbar ul {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+}
+
+.navbar li a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.navbar li a:hover {
+    text-decoration: underline;
+}
+
+/* HOME */
+.home-container {
+    text-align: center;
+    margin-top: 60px;
+    z-index: 1;
+    position: relative;
+}
+
+.cards {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 18px;
+    margin-top: 30px;
+}
+
+.card {
+    width: 150px;
+    background: rgba(255, 255, 255, 0.95);
+    padding: 25px;
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+    cursor: pointer;
+    transition: .2s;
+    font-size: 18px;
+    text-decoration: none;
+    color: #333;
+    font-weight: bold;
+    text-align: center;
+}
+
+.card:hover {
+    transform: scale(1.05);
+    background: #eaffea;
+}
+
+/* Botão Raposa */
+.chat-bot-button {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    background: #ff7f50;
+    color: white;
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 30px;
+    cursor: pointer;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+    transition: .2s;
+    z-index: 999;
+}
+
+.chat-bot-button:hover {
+    transform: scale(1.12);
+    background: #ff5c1a;
+}
+
+/* Footer */
+footer {
+    background: #222;
+    color: white;
+    text-align: center;
+    padding: 15px 20px;
+    margin-top: 40px;
+}
+
+
+/* Botão da raposa */
+.chat-bot-button {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    background: #ff7f50;
+    color: white;
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 30px;
+    cursor: pointer;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+    z-index: 999;
+}
+
+/* Janela do chat */
+.chat-box {
+    position: fixed;
+    bottom: 90px; /* acima do botão */
+    right: 20px;
+    width: 300px;
+    max-height: 400px;
+    background: white;
+    border-radius: 10px;
+    padding: 10px;
+    display: none;
+    flex-direction: column;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.25);
+    z-index: 998;
+}
+
+.chat-header {
+    font-weight: bold;
+    margin-bottom: 8px;
+    text-align: center;
+    background: #ff7f50;
+    color: white;
+    padding: 5px;
+    border-radius: 6px 6px 0 0;
+}
+
+.chat-messages {
+    flex: 1;
+    overflow-y: auto;
+    font-size: 14px;
+    margin-bottom: 5px;
+}
+
+.chat-box textarea {
+    width: 100%;
+    height: 50px;
+    padding: 5px;
+    resize: none;
+    margin-bottom: 5px;
+}
+
+.chat-box button {
+    width: 100%;
+    background: #ff7f50;
+    color: white;
+    border: none;
+    padding: 8px;
+    cursor: pointer;
+    border-radius: 5px;
+}

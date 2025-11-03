@@ -1,0 +1,113 @@
+/* ===== Fundo com Blur ===== */
+body {
+    margin: 0;
+    padding: 0;
+    font-family: "Poppins", Arial, sans-serif;
+    min-height: 100vh;
+    position: relative;
+}
+
+.background-blur {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: url("/img/48bace0c-c499-4a44-9aed-7961f8008337.png");
+    background-size: cover;
+    background-position: center;
+    filter: blur(3px);
+    z-index: -1;
+}
+
+/* ===== Navbar ===== */
+.navbar {
+    background: #ff7f50;
+    padding: 12px 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: white;
+    font-weight: bold;
+}
+
+.navbar ul {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+}
+
+.navbar li a {
+    color: white;
+    text-decoration: none;
+}
+
+.navbar li a:hover {
+    text-decoration: underline;
+}
+
+/* ===== Conteúdo ===== */
+.page-container {
+    padding: 40px 20px;
+    text-align: center;
+    color: #2d1b0f;
+}
+
+.page-box {
+    max-width: 700px;
+    margin: auto;
+    background: rgba(255,255,255,0.9);
+    padding: 30px;
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.15);
+}
+
+/* ===== Botão Chat Raposa ===== */
+.chat-bot-button {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    background: #ff7f50;
+    color: white;
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 30px;
+    cursor: pointer;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+    z-index: 999;
+}
+
+/* ===== Janela do Chat ===== */
+.chat-box {
+    position: fixed;
+    bottom: 90px;
+    right: 20px;
+    width: 290px;
+    background: white;
+    border-radius: 10px;
+    padding: 15px;
+    display: none;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.25);
+}
+
+.chat-box textarea {
+    width: 100%;
+    height: 60px;
+    padding: 8px;
+    resize: none;
+}
+
+.chat-box button {
+    width: 100%;
+    background: #ff7f50;
+    color: white;
+    border: none;
+    padding: 10px;
+    cursor: pointer;
+    margin-top: 8px;
+    border-radius: 5px;
+}
